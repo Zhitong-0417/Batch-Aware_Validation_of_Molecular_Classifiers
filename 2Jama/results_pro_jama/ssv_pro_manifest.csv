@@ -1,0 +1,7 @@
+experiment,output_name,prevalence_mode,status,n_raw_rows,output_directory
+s1_broad,jama_pro_s1_broad,natural,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s1_broad\natural
+s1_broad,jama_pro_s1_broad,class_stratified,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s1_broad\class_stratified
+s2_broad,jama_pro_s2_broad,natural,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s2_broad\natural
+s2_broad,jama_pro_s2_broad,class_stratified,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s2_broad\class_stratified
+s3_broad,jama_pro_s3_broad,natural,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s3_broad\natural
+s3_broad,jama_pro_s3_broad,class_stratified,complete,2000,C:\Users\apple\Desktop\RNASeq_with_Python\2Jama\results_pro_jama\jama_pro_s3_broad\class_stratified

@@ -1,0 +1,4 @@
+scenario,domain,metric,value,ratio,minority_proportion,status,cramers_v,abs_prevalence_difference,chi_square_p_value
+Scenario 3 Pro meta-batch,label_balance,max_class_count / min_class_count,"{'Early-stage LCa': 171, 'Non-LCa': 2148}",12.56140350877193,0.07373868046571798,HIGH,,,
+Scenario 3 Pro meta-batch,batch_balance,max_batch_count / min_batch_count,"{'batch_1': 1104, 'batch_2': 1215}",1.1005434782608696,0.4760672703751617,LOW,,,
+Scenario 3 Pro meta-batch,label_batch_association,Cramer's V and max class-prevalence range across batches,"{'Early-stage LCa': {'batch_1': 67, 'batch_2': 104}, 'Non-LCa': {'batch_1': 1037, 'batch_2': 1111}}",,,LOW,0.047599413877887055,0.024908302021828595,0.02189426596007099

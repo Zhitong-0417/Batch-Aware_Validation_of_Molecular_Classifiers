@@ -1,0 +1,4 @@
+scenario,domain,metric,value,ratio,minority_proportion,status,cramers_v,abs_prevalence_difference,chi_square_p_value
+Scenario 2,label_balance,max_class_count / min_class_count,"{'LCa': 546, 'NTLD': 573}",1.0494505494505495,0.4879356568364611,LOW,,,
+Scenario 2,batch_balance,max_batch_count / min_batch_count,"{'1': 18, '2': 834, '3': 267}",46.333333333333336,0.0160857908847185,HIGH,,,
+Scenario 2,label_batch_association,Cramer's V and max class-prevalence range across batches,"{'LCa': {'1': 18, '2': 507, '3': 21}, 'NTLD': {'1': 0, '2': 327, '3': 246}}",,,HIGH,0.4688199176292325,0.9213483146067416,3.9192746027847e-54

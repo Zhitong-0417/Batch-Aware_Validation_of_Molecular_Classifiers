@@ -1,0 +1,4 @@
+scenario,domain,metric,value,ratio,minority_proportion,status,cramers_v,abs_prevalence_difference,chi_square_p_value
+Scenario 1 Pro meta-batch,label_balance,max_class_count / min_class_count,"{'LCa': 546, 'Non-LCa': 2148}",3.934065934065934,0.2026726057906459,MODERATE,,,
+Scenario 1 Pro meta-batch,batch_balance,max_batch_count / min_batch_count,"{'batch_1': 2141, 'batch_2': 553}",3.871609403254973,0.2052709725315516,MODERATE,,,
+Scenario 1 Pro meta-batch,label_batch_association,Cramer's V and max class-prevalence range across batches,"{'LCa': {'batch_1': 507, 'batch_2': 39}, 'Non-LCa': {'batch_1': 1634, 'batch_2': 514}}",,,MODERATE,0.16707043142881067,0.16628081890380952,4.261534809616892e-18

@@ -1,0 +1,2 @@
+n_classes,n_batches,class_imbalance_ratio,batch_imbalance_ratio,abs_prevalence_difference,prevalence_ratio,cramers_v,chi_square_p_value,confounding_status
+2,2,12.56140350877193,1.1005434782608696,0.024908302021828595,,0.04759941387788706,0.021894265960070908,LOW
