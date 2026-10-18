@@ -1,0 +1,4 @@
+scenario,qc_directory,n_samples,n_poor_features,boxplot_samples,status
+Scenario 1,results_pro\yokoi_s1_positive\qc,3079,115,320,complete
+Scenario 2,results_pro\yokoi_s2_positive\qc,1179,142,956,complete
+Scenario 3,results_pro\yokoi_s3_positive\qc,3174,117,415,complete

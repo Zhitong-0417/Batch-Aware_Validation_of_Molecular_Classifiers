@@ -1,0 +1,7 @@
+experiment,output_name,prevalence_mode,status,n_raw_rows,output_directory
+s1_positive,yokoi_s1_positive,natural,complete,2000,results_pro\yokoi_s1_positive\natural
+s1_positive,yokoi_s1_positive,class_stratified,complete,2000,results_pro\yokoi_s1_positive\class_stratified
+s2_positive,yokoi_s2_positive,natural,complete,2000,results_pro\yokoi_s2_positive\natural
+s2_positive,yokoi_s2_positive,class_stratified,complete,2000,results_pro\yokoi_s2_positive\class_stratified
+s3_positive,yokoi_s3_positive,natural,complete,2000,results_pro\yokoi_s3_positive\natural
+s3_positive,yokoi_s3_positive,class_stratified,complete,2000,results_pro\yokoi_s3_positive\class_stratified
