@@ -1,0 +1,3 @@
+prevalence_mode,normalization_method,classifier_method,batch_1_to_batch_2,batch_2_to_batch_1,signed_direction_gap_100_raw_error,absolute_direction_gap_100_raw_error,metric,signed_direction_gap_100_balanced_error,absolute_direction_gap_100_balanced_error
+natural,non,knn,0.2830188679245283,0.3018867924528302,-0.018867924528301883,0.018867924528301883,raw_error,,
+natural,non,knn,0.2816951566951567,0.29985754985754987,,,balanced_error,-0.018162393162393153,0.018162393162393153
