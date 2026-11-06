@@ -29,7 +29,7 @@ The original R workflow controlled overall batch size but did not explicitly sep
 Two complementary protocols are used:
 
 - **Natural**: preserves the observed class composition and measures real-world cross-batch difficulty.
-- **Class-stratified**: approximately balances class prevalence across batches to assess cross-batch performance differences after approximately balancing class prevalence
+- **Class-stratified**: approximately balances class prevalence across batches to assess residual cross-batch performance differences under a more comparable class composition.
 
 Together they distinguish:
 
