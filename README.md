@@ -1,7 +1,7 @@
 # Batch-Aware_Validation_of_Molecular_Classifiers
 Python reproduction and methodological extension of the earlier **CrossBatch-ML (R workflow)** for studying how stronger train/test batch separation affects molecular-classifier performance.
 
-The original framework showed that classification error can increase as validation moves from mixed/random-like splits toward strict cross-batch evaluation. The current Python Pro workflow keeps this core design but adds several robustness improvements to better separate batch effects from other sources of distribution shift. 
+The original framework showed that classification error can increase as validation moves from mixed/random-like splits toward strict cross-batch evaluation. The current Python Pro workflow keeps this core design but adds several robustness improvements to better distinguish the influence of class composition from residual cross-batch performance differences.
 
 ## Datasets
 
@@ -29,7 +29,7 @@ The original R workflow controlled overall batch size but did not explicitly sep
 Two complementary protocols are used:
 
 - **Natural**: preserves the observed class composition and measures real-world cross-batch difficulty.
-- **Class-stratified**: approximately balances class prevalence across batches to isolate batch/domain-associated degradation more clearly.
+- **Class-stratified**: approximately balances class prevalence across batches to assess cross-batch performance differences after approximately balancing class prevalence
 
 Together they distinguish:
 
@@ -73,18 +73,17 @@ The Pro workflow combines two validation protocols with two error metrics:
 
 | Protocol | Metric | Interpretation |
 |---|---|---|
-| Class-stratified | Balanced error | Batch-associated degradation with class composition controlled |
+| Class-stratified | Balanced error | Cross-batch error under approximately balanced class composition |
 | Class-stratified | Raw error | Conventional error after class balancing |
 | Natural | Balanced error | Realistic transfer with equal class weighting |
 | Natural | Raw error | Overall real-world deployment error |
 
-This creates a more interpretable framework for separating:
+This creates a more interpretable framework for examining:
 
 ```text
-batch/domain shift
-class-prevalence shift
-class imbalance
-directional transfer asymmetry
+sensitivity to class composition,
+error weighting,
+and transfer direction under heterogeneous batch structures
 ```
 
 ---
@@ -111,6 +110,8 @@ Shared methodology is stored in `src/`, while dataset-specific loading, preproce
 This repository focuses on **validation methodology**, not on reproducing the original predictive models from the source publications.
 
 The main objective is to determine whether molecular-classifier performance remains reliable when validation becomes increasingly independent of the batch structure present in the training data.
+
+Class-stratified validation is a sensitivity analysis rather than a causal identification procedure. Residual cross-batch performance differences after prevalence balancing cannot be attributed exclusively to batch effects.
 
 In short:
 
